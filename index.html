@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-container">
+   <h1>Welcome to Travel Planner</h1>
+    <h1>Login</h1>
+    <form id="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required></br></br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required></br></br>
+      <button type="button" onclick="login()">Login</button>
+    </form>
+  </div>
+
+  <div id="travel-container" style="display: none;">
+    <h1>Travel Planner</h1>
+    <form id="travel-form">
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" required> </br></br>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required></br></br>
+      <button type="button" onclick="saveTravelPlan()">Save Travel Plan</button>
+    </form>
+
+    <h2>Your Travel Plans</h2>
+    <ul id="travel-list"></ul>
+     <table id="travel-table"></table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
